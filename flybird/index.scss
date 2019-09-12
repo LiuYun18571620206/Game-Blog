@@ -1,0 +1,175 @@
+html,body{
+    width:100vw;
+    height:100vh;
+}
+*{
+    margin:0;
+    padding:0;
+-webkit-touch-callout: none; /* iOS Safari */
+
+-webkit-user-select: none; /* Chrome/Safari/Opera */
+
+-khtml-user-select: none; /* Konqueror */
+
+-moz-user-select: none; /* Firefox */
+
+-ms-user-select: none; /* Internet Explorer/Edge */
+
+user-select: none; /* Non-prefixed version, currently*/
+}
+#nav{
+    position: relative;
+    width:50vw;
+    margin:0 auto;
+    color:#fff1c1;
+    height:5vh;
+    line-height: 5vh;
+    text-align:center;
+    background-color:#293462;
+    margin-bottom:3rem;
+    border-radius:0.5rem;
+    letter-spacing: 1rem;
+    border:0.1rem solid white;
+    >.but{
+        cursor: pointer;
+        position: absolute;
+        height:100%;
+        top:0;
+        left:50%;
+        background-color:#f76262;
+        border-radius:0.5rem;
+    }
+    >.bk{
+        position: absolute;
+        left:0;
+        top:0;
+        height:100%;
+        background-color:#216583;
+        border-radius:0.5rem;
+        letter-spacing: 1rem;
+        text-align: left;
+        overflow: hidden;
+        >p{
+            color:white;
+            position: absolute;
+            left:24rem;
+            margin-left:-4rem;
+        }
+    }
+}
+#background{
+    .box{
+        z-index: -1;
+        position: fixed;
+        top:0;
+        left:0;
+        height:100vh;
+        width:33.33vw;
+    }
+    .one{
+        background-color:#013e97;
+    }
+    .two{
+        left:33.33vw;
+        background-color:#f9c323;
+    }
+    .three{
+        left:66.66vw;
+        background-color:#e83c26;
+    }
+}
+#FlyBird{
+    position: relative;
+    margin:0 auto;
+    width:400px;
+    height:600px;
+    background-image: url(./img/bg.png);
+    overflow: hidden;
+
+#title{
+    text-align:center;
+    color:white;
+    font-size:2em;
+    padding-top:20%;
+    p{
+        line-height:0.5em;
+        +p{
+            font-size:0.5em;
+            margin-top:1.5rem;
+        }
+    }
+}
+#birds{
+
+    position: absolute;
+    top:300px;
+    left:2em;
+    width:50px;
+    height:30px;
+    overflow: hidden;
+    &:hover{
+        >img+img{
+            position: relative;
+            left:5px;
+           }
+    }
+}
+.green{
+    position: absolute;
+    top:0px;
+    width:63px;
+    height:485px;
+}
+.top{
+    top:0px;
+    .topHeight{
+        position: relative;
+        width:60px;
+        height:20px;
+        left:2px;
+        transform: rotate(180deg);
+    }
+    .tops{
+        position: relative;
+        width:63px;
+        height:60px;
+        left:0px;
+        transform: rotate(180deg)
+    }
+}
+.bottom{
+    bottom:0;
+    .bottoms{
+        position: relative;
+    }
+    .bottomHeight{
+        position: relative;
+        width:60px;
+        height:245px;
+        left:1px;
+    }
+}
+.top,.bottom{
+    position: absolute;
+    >img{
+        display: block;
+    }
+}
+.fraction{
+    box-sizing: border-box;
+    padding-top:1em;
+    width:400px;
+    height:100px;
+    position: absolute;
+    bottom:0;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    #start{
+        font-size: 1em;
+    }
+    #numbers{
+        font-size:2em;
+    }
+}
+}
